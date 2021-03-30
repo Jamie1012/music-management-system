@@ -47,8 +47,8 @@
 			require_once('../Administrator/PHP/connect.php');
 			error_reporting(E_ERROR);
 			$page = 'SongRank.php';
-			$dataperpage = mysql_query("SELECT * FROM tblsongs");
-			$numpage = mysql_num_rows($dataperpage);
+			$dataperpage = mysqli_query($connect,"SELECT * FROM tblsongs");
+			$numpage = mysqli_num_rows($dataperpage);
 			$start = $_GET['start'];
 			$eu = $start - 0;
 			$limit = 8;
@@ -59,8 +59,8 @@
 				echo 'Data Error';	
 				exit();
 			}
-			$getVotes = mysql_query("SELECT tblalbum.id,tblalbum.albumname,tblalbum.albumimage,tblsongs.songsinger,tblsongs.songpoints FROM tblalbum,tblsongs WHERE tblsongs.songalbum = tblalbum.id ORDER BY songpoints DESC LIMIT $eu,$limit");
-			while($row = mysql_fetch_array($getVotes)){
+			$getVotes = mysqli_query($connect,"SELECT tblalbum.id,tblalbum.albumname,tblalbum.albumimage,tblsongs.songsinger,tblsongs.songpoints FROM tblalbum,tblsongs WHERE tblsongs.songalbum = tblalbum.id ORDER BY songpoints DESC LIMIT $eu,$limit");
+			while($row = mysqli_fetch_array($getVotes)){
 			$r = rand(128,255);
 			$g = rand(128,255);
 			$b = rand(128,255);

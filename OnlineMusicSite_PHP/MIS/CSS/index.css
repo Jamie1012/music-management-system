@@ -76,7 +76,7 @@ html,body{ padding:0px; margin:0px; background:url(../Templates/body_back1.jpg) 
 .login ul li{
 	position:relative;
 	list-style:none;
-} 
+}
 .login ul li a{
 	text-decoration:none;
 	line-height:20px;
@@ -149,35 +149,35 @@ Container and Inner Container Style
 	float:left
 	}
 #class_col2{
-	height:173px; 
-	width:222px; 
-	background:#FFF;
-	-moz-box-shadow:0px 0px 10px #B0B0B0;
-	-webkit-box-shadow:0px 0px 10px #B0B0B0;
-	-khtml-box-shadow:0px 0px 10px #B0B0B0;
-	border:1.5em medium #B0B0B0; 
-	float:right; 
-	margin-right:-2px;
-}
-#class_col3{
-	height:173px; 
+	height:173px;
 	width:222px;
 	background:#FFF;
 	-moz-box-shadow:0px 0px 10px #B0B0B0;
 	-webkit-box-shadow:0px 0px 10px #B0B0B0;
 	-khtml-box-shadow:0px 0px 10px #B0B0B0;
-	border:1.5em medium #B0B0B0; 
+	border:1.5em medium #B0B0B0;
+	float:right;
+	margin-right:-2px;
+}
+#class_col3{
+	height:173px;
+	width:222px;
+	background:#FFF;
+	-moz-box-shadow:0px 0px 10px #B0B0B0;
+	-webkit-box-shadow:0px 0px 10px #B0B0B0;
+	-khtml-box-shadow:0px 0px 10px #B0B0B0;
+	border:1.5em medium #B0B0B0;
 	float:right;
 	margin-right:10px;
 }
 #class_col4{
 	height:173px;
-	width:222px; 
+	width:222px;
 	background:#FFF;
 	-moz-box-shadow:0px 0px 10px #B0B0B0;
 	-webkit-box-shadow:0px 0px 10px #B0B0B0;
 	-khtml-box-shadow:0px 0px 10px #B0B0B0;
-	border:1.5em medium #B0B0B0; 
+	border:1.5em medium #B0B0B0;
 	margin-left:233px;
 }
 .header{
@@ -249,7 +249,7 @@ label{
 .table{
 	height:35px;
 	background:#333;
-	color:#FFF; 
+	color:#FFF;
 	border-bottom:5px solid #BAFD3E;
 	border-top:1px dotted #CCC;
 	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
@@ -258,8 +258,8 @@ label{
 }
 .table1{border-bottom:1px dashed #CCC; height:32px;}
 .table1:hover{ background:#E6F8FB; cursor:pointer}
-#vote1{ 
-	width:70px; height:30px; 
+#vote1{
+	width:70px; height:30px;
 	-moz-border-radius:2px;
 	-webkit-border-radius:2px;
 	background:#EEE;
@@ -289,7 +289,7 @@ label{
 	height:570px;
 	width:373px;
 	left:274px;
-	
+
 	position:absolute;
 	-moz-box-shadow:0px 0px 10px #B0B0B0;
 	-webkit-box-shadow:0px 0px 10px #B0B0B0;
@@ -340,13 +340,13 @@ Error/Success Messages
 	margin-bottom:5px;
 	border:solid 2px #C0F0B9;
 	background:#D5FFC6;
-	color:#48A41C; 
+	color:#48A41C;
 	font-family:Arial, Helvetica, sans-serif;
-	font-size:14px; 
+	font-size:14px;
 	font-weight:bold;
 	text-align:center;
 }
-.link{ 
+.link{
 	text-decoration:none;
 	font-family:Georgia, "Times New Roman", Times, serif;
 	font-size:10px;
@@ -369,4 +369,3 @@ Footer Style
 .footer_menu ul li{ line-height:20px; padding-top:10px; color:#999; font-weight:500px;}
 .footer_menu ul li a{text-decoration:none;line-height:20px;font-family:Arial, Helvetica, sans-serif;font-size:12px;;text-shadow:1px 1px 5px #333;color:#FFF; font-weight:560}
 .footer_menu ul li a:hover{ text-decoration:underline}
-
