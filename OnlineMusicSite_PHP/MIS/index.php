@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>BMEG Music</title>
+<title>MUSIQUE Music</title>
 <!-- BOOTSTRAP -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -361,6 +361,15 @@ $(function() {
 .imgg:hover{
 	transform: scale(1.1);
 }
+.himg{
+	border-radius: 15px;
+}
+.himg:hover{
+	transform: scale(1.1);
+}
+.hh:hover{
+	transform: scale(1.1);
+}
 </style>
 </head>
 
@@ -387,30 +396,9 @@ $(function() {
 				<li class="nav-item">
 	        <a class="nav-link" href="Frontend/AboutUs.php" style="color: #f4f3f3;">ABOUT US</a>
 	      </li>
-	      <li class="nav-item">
-	        <a class="nav-link " href="Frontend/News.php" style="color: #f4f3f3;">NEWS</a>
-	      </li>
 	    </ul>
 	  </div>
 	</nav>
-
-<!--Start Menu-->
-<!-- <nav class=" navbar navbar-dark menu"> -->
-	<!-- header_menu -->
-	<!-- <div class="menu">
-    	<ul>
-        	<li><a href="index.php">HOME</a></li>
-            <li><a href="Frontend/Albums.php">ALBUMS</a></li>
-            <li><a href="Frontend/Licensing.php">LICENSING</a></li>
-            <li><a href="Frontend/Songs.php">VOTE</a></li>
-            <li><a href="Frontend/AboutUs.php">ABOUT US</a></li>
-            <li><a href="Frontend/News.php">NEWS</a></li>
-
-    	</ul>
-    </div>
-</nav> -->
-<!--End Menu-->
-
 <nav class="menu_under navbar navbar-light bg-light">
   <form class="form-inline">
 		<div class="login">
@@ -421,9 +409,6 @@ $(function() {
 							&nbsp;&nbsp;&nbsp;<a class=" nav-item btn btn-sm btn-outline-secondary" href="Frontend/FeedbackForm.php" id="fback">Submit Feedback</a>
 
 							<a class="nav-item btn btn-sm btn-outline-secondary adminbtn" href="loginpage.php">Admin Login</a>
-					<!-- <ul>
-							<li><a class="nav-item btn btn-sm btn-outline-secondary" href="loginpage.php">Admin Login</a></li>
-					</ul> -->
 		</div>
   </form>
 </nav>
@@ -432,7 +417,7 @@ $(function() {
 
 
 <!-- <div class="header_under"></div> -->
-<section class="slideshowV ">
+<section style="background-color:#ff4c68;"class="slideshowV ">
 <div class="container_wrapper"><!--Start Container for the web content-->
     <div class="home_content"> <!--Start Web Content-->
         <div class="banner">
@@ -533,7 +518,7 @@ $(function() {
     right: 0px;
     left: 533px;
 		font-family: 'Montserrat', sans-serif; color:#fff;">
-    		<div id="header_title">BMEG TOP 6 SONGS &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    		<div id="header_title">MUSIQUE TOP 6 SONGS &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 					<a class="btn btn-sm btn-outline-secondary "href="Frontend/SongRank.php" id="link" style="margin-bottom: 2rem;
 ">See Rankings</a></div>
             <table cellpadding="0" cellspacing="0" height="230" id="table">
@@ -562,18 +547,18 @@ $(function() {
         </div>
 			</div>
 			</div>
-     <div class="header3" style="margin-top: -22px;">
-    		<div id="news_header" style="font-family: Montserrat;font-weight:900; font-size:35px;margin-left: 550px;padding-top: 30px;">NEWS</div>
+     <div style="margin-top: -22px;margin-bottom: 100px;">
+    		<div  style="font-family: Montserrat;font-weight:900; font-size:35px;margin-left: 220px;margin-top: 20px;padding-top: 30px;">NEWS</div>
                 <div class="news_content" >
-                    <ul>
-                    	<li><a class="btn btn-outline-dark btn-lg " style="font-family: 'Montserrat', sans-serif; margin-left: 550px;" href="#">BMEG music start community projects</a></li>
-                        <li><a class="btn btn-outline-dark btn-lg "  style="font-family: 'Montserrat', sans-serif; margin-left: 550px;" href="#">Parokya ni Edgar is now in BMEG</a></li>
-                        <li><a class="btn btn-outline-dark btn-lg "  style="font-family: 'Montserrat', sans-serif;margin-left: 550px;" href="#">BMEG financial statement release</a></li>
-                        <li><a class="btn btn-outline-dark btn-lg "  style="font-family: 'Montserrat', sans-serif;margin-left: 550px;" href="#">BMEG Music Company Annual Report</a></li>
-                        <li><a class="btn btn-outline-dark btn-lg "   style="font-family: 'Montserrat', sans-serif;margin-left: 550px;"href="#">BMEG International Expansion</a></li>
-                        <li><a class="btn btn-outline-dark btn-lg "   style="font-family: 'Montserrat', sans-serif;margin-left: 550px;" href="#">BMEG music opens its new office in Cebu</a></li>
-                        <li><a class="btn btn-outline-dark btn-lg"  style="font-family: 'Montserrat', sans-serif;margin-left: 550px;" href="#">Callalily contract signing with BMEG music</a></li>
-                        <li><a class="btn btn-outline-dark btn-lg "  style="font-family: 'Montserrat', sans-serif;margin-left: 550px;" href="#">BMEG music teamed up with Star Records for big productions</a></li>
+                    <ul style="column-count:2;">
+                    	<li><a class="btn btn-outline-dark btn-lg " style="font-family: 'Montserrat', sans-serif; margin-left: 220px;" href="#">MUSIQUE music start community projects</a></li>
+                        <li><a class="btn btn-outline-dark btn-lg "  style="font-family: 'Montserrat', sans-serif; margin-left: 220px;" href="#">Parokya ni Edgar is now in MUSIQUE</a></li>
+                        <li><a class="btn btn-outline-dark btn-lg "  style="font-family: 'Montserrat', sans-serif;margin-left: 220px;" href="#">MUSIQUE financial statement release</a></li>
+                        <li><a class="btn btn-outline-dark btn-lg "  style="font-family: 'Montserrat', sans-serif;margin-left: 220px;" href="#">MUSIQUE Music Company Annual Report</a></li>
+                        <li><a class="btn btn-outline-dark btn-lg "   style="font-family: 'Montserrat', sans-serif;margin-left: 220px;"href="#">MUSIQUE International Expansion</a></li>
+                        <li><a class="btn btn-outline-dark btn-lg "   style="font-family: 'Montserrat', sans-serif;margin-left: 220px;" href="#">MUSIQUE music opens its new office in Cebu</a></li>
+                        <li><a class="btn btn-outline-dark btn-lg"  style="font-family: 'Montserrat', sans-serif;margin-left: 220px;" href="#">Callalily contract signing with MUSIQUE music</a></li>
+                        <li><a class="btn btn-outline-dark btn-lg "  style="font-family: 'Montserrat', sans-serif;margin-left: 220px;" href="#">MUSIQUE is the best</a></li>
                         <li></li>
                     </ul>
 									</div>
@@ -589,13 +574,16 @@ $(function() {
 			?>
             <div class="album_holder">
             	<div class="content_holder">
-                	<div class="content container" ><div class="col" style="top: 90px;margin-left: 304px;">
-                		<?php echo "<img src=Administrator/PHP/upload_images/album/$rowAlbum[albumimage] height=100 width=100>"?>	</div>	<div class="left col" style="margin-left:60%; font-family: Montserrat;font-weight:900; font-size:15px;"><!--Start music information container-->
+                	<div  class="content container" >
+
+										<div class="col" style="top: 90px;margin-left: 304px;">
+                		<?php echo "<img class='himg'src=Administrator/PHP/upload_images/album/$rowAlbum[albumimage] height=100 width=100>"?>	</div>
+										<div class="left col" style="margin-left:50%; font-family: Montserrat;font-weight:900; font-size:15px;"><!--Start music information container-->
                         <?php
-						echo '<label id=title>&nbsp'.$rowAlbum['albumname'].'</label><br/>';
-						echo '<label id=title1>&nbsp;'.$rowAlbum['songsinger'].'</label><br/>';
+						echo '<label class="hh" id=title>&nbsp'.$rowAlbum['albumname'].'</label><br/>';
+						echo '<label class="hh" id=title1>&nbsp;'.$rowAlbum['songsinger'].'</label><br/>';
 						?>
-                        <a href="Administrator/PHP/songs/<?php echo $rowAlbum['songfile']?>" class="btn btn-outline-dark" id="link">Play</a>
+                        <a href="Administrator/PHP/songs/<?php echo $rowAlbum['songfile']?>" class="btn btn-outline-dark hh" id="link">Play</a>
                     </div><!--ENd music information container-->
 
                     </div>
@@ -615,76 +603,14 @@ $(function() {
    		<div class="col"><lottie-player src="https://assets2.lottiefiles.com/packages/lf20_q8ldfyrr.json"  background="transparent"  speed="1"  style="width: 150px; height: 150px;    padding-left: 550px;
     padding-top: 40px;"  loop  autoplay></lottie-player></div>
 <div class="col">
-<a  class="btn btn-outline-dark btn-lg"href="Frontend/Contacts.php" style="    margin-top: 90px;
+<a  class="btn btn-outline-dark btn-lg"href="Frontend/Contacts.php" style=" margin-top: 90px;
     margin-left: 40px; ">contact us</a>
 </div>
 </div>
     </div>
 
 		        <br /> <br /> <br />
-		        <span style="color:#999; font-size:14px; margin-top:10px;    margin-left: 700px;">&copy;2021 Muse Music, Inc.</span>
+		        <span style="color:#999; font-size:14px; margin-top:10px;margin-left: 700px;">&copy;2021 Muse Music, Inc.</span>
 </div>
 </body>
 </html>
-<!--
-
-	<section class="imgC">
-
-
-	<div class="img_container ">
-<div id="carousel-example-1z" class="carousel slide carousel-fade"> -->
-	 <!-- data-ride="carousel" -->
-  <!--Indicators-->
-  <!-- <ol class="carousel-indicators">
-    <li data-target="#carousel-example-1z" data-slide-to="0" class="active"></li>
-    <li data-target="#carousel-example-1z" data-slide-to="1"></li>
-    <li data-target="#carousel-example-1z" data-slide-to="2"></li>
-  </ol> -->
-  <!--/.Indicators-->
-  <!--Slides-->
-  <!-- <div class="carousel-inner" role="listbox">
-    <!--First slide-->
-    <!-- <div class="carousel-item active">
-      <img class="d-block w-100" id="img" src="https://www.kolpaper.com/wp-content/uploads/2020/05/HD-Ariana-Grande-Wallpaper-3.jpg"
-        alt="First slide">
-				<h1 class="review1">Listen to my album only at Musiques<br>-Ariana Grande </h1>
-    </div> -->
-    <!--/First slide-->
-    <!--Second slide-->
-    <!-- <div class="carousel-item">
-      <img class="d-block w-100" id="img" src="https://i.pinimg.com/originals/65/87/2c/65872c89b4cd03c07c2c58e956332999.png"
-        alt="Second slide">
-    </div> -->
-    <!--/Second slide-->
-    <!--Third slide-->
-    <!-- <div class="carousel-item">
-      <img class="d-block w-100" id="img" src="https://wallpaperaccess.com/full/2746222.jpg"
-        alt="Third slide">
-    </div>
-  </div> -->
-  <!--/.Slides-->
-  <!--Controls-->
-  <!-- <a class="carousel-control-prev" href="#carousel-example-1z" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carousel-example-1z" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a> -->
-  <!--/.Controls-->
-<!-- </div> -->
-<!--/.Carousel Wrapper-->
-
-<!--
-	<div id="class_col0">
-		<lottie-player src="https://assets10.lottiefiles.com/packages/lf20_NsCkXA/music.json"  background="transparent"  speed="1"  style="width: 450px; height: 450px;"  loop  autoplay></lottie-player>
-	</div> -->
-       <!-- <div id="class_col1">
-          <img src="https://aimg.vibbidi-vid.com/vibbidi-images/albums/img_E8EC7D72F20B4259ACCFEB0A4C05B6B0.2020.05.07.10.44.11.jpg" height="165" width="216" id="img"/>
-       </div>
-       <div id="class_col2"><img src="https://i.pinimg.com/originals/ab/12/cf/ab12cf5be700cd42bb3bfe0463271175.jpg" height="165" width="216" id="img"/></div>
-       <div id="class_col3"><img src="https://i.pinimg.com/originals/65/87/2c/65872c89b4cd03c07c2c58e956332999.png" height="165" width="216" id="img"/></div>
-       <div id="class_col4"><img src="https://wallpaperaccess.com/full/2746222.jpg" height="165" width="216" id="img"/></div> -->
-    <!-- </div>
-</section> -->

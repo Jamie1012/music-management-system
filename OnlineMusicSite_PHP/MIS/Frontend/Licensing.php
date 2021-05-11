@@ -42,9 +42,6 @@
 				<li class="nav-item">
 					<a style="font-weight: 100;color: #f4f3f3;" class="nav-link" href="AboutUs.php" >ABOUT US</a>
 				</li>
-				<li class="nav-item">
-					<a  style="font-weight: 100;color: #f4f3f3;" class="nav-link " href="News.php" >NEWS</a>
-				</li>
 			</ul>
 		</div>
 	</nav>

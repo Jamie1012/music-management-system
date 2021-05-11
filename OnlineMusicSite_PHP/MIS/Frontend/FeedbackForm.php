@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>BMEG Music | Feedback Form</title>
+<title>MUSIQUE Music | Feedback Form</title>
 <link rel="stylesheet"  type="text/css" href="CSS/index.css"/>
 <script type="text/javascript" src="Javascript/jquery-1.6.2.min.js"></script>
 <!-- BOOTSTRAP -->
@@ -195,9 +195,6 @@ $(document).ready(function(){
 				<li class="nav-item">
 					<a class="nav-link" href="AboutUs.php" style="color: #f4f3f3;font-family:Montserrat;">ABOUT US</a>
 				</li>
-				<li class="nav-item">
-					<a class="nav-link " href="News.php" style="color: #f4f3f3;font-family:Montserrat;">NEWS</a>
-				</li>
 			</ul>
 		</div>
 	</nav>
@@ -273,10 +270,10 @@ $(document).ready(function(){
 	<div class="footer_wrapper">
 	    <div class="footer_menu">
 	    	<ul>
-	        	<li>Find the us <a href="Contacts.php">BMEG Music Office</a> or <a href="Contacts.php">contact us</a> for more information</li>
+	        	<li>Find the us <a href="Contacts.php">MUSIQUE Music Office</a> or <a href="Contacts.php">contact us</a> for more information</li>
 	        </ul>
 	        <br /> <br /> <br />
-	        <span style="color:#999; font-size:14px; margin-top:10px;">&copy;2012 BMEG Music, Inc.</span>
+	        <span style="color:#999; font-size:14px; margin-top:10px;">&copy;2012 MUSIQUE Music, Inc.</span>
 	    </div>
 	</div>
 	</section>

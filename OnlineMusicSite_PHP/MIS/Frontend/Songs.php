@@ -52,23 +52,20 @@
 				<li class="nav-item">
 					<a style="font-weight: 100;color: #f4f3f3;" class="nav-link" href="AboutUs.php" >ABOUT US</a>
 				</li>
-				<li class="nav-item">
-					<a  style="font-weight: 100;color: #f4f3f3;" class="nav-link " href="News.php" >NEWS</a>
-				</li>
 			</ul>
 		</div>
 	</nav>
 
-<nav class="menu_under navbar navbar-light bg-light">
-  <form style="margin-top: 10px;" class="form-inline">
+<nav style="padding-top:0;padding-bottom:0;height: 45px;"class="menu_under navbar navbar-light bg-light">
+  <form style="" class="form-inline">
 		<div  style="color:#232931;font-family:Montserrat;margin-top:-10px;font-size:1rem; font-weight: 100;"class="login">
 						<?php
 			$today = date('F j, Y');
 			echo '&nbsp;Today is '.$today;
 			?>
-							&nbsp;&nbsp;&nbsp;<a class=" nav-item btn btn-sm btn-outline-secondary" href="Frontend/FeedbackForm.php" id="fback">Submit Feedback</a>
+							&nbsp;&nbsp;&nbsp;<a style="padding:5px 5px 5px 5px;height: 30px;font-size: 0.8rem;" class=" nav-item btn btn-sm btn-outline-secondary" href="../Frontend/FeedbackForm.php" id="fback">Submit Feedback</a>
 
-							<a class="nav-item btn btn-sm btn-outline-secondary adminbtn" href="loginpage.php">Admin Login</a>
+							<a style="padding:5px 5px 5px 5px;height: 30px;font-size: 0.8rem;"class="nav-item btn btn-sm btn-outline-secondary adminbtn" href="../loginpage.php">Admin Login</a>
 					<!-- <ul>
 							<li><a class="nav-item btn btn-sm btn-outline-secondary" href="loginpage.php">Admin Login</a></li>
 					</ul> -->
@@ -78,12 +75,11 @@
 
 <div class="container_wrapper"><!--Start Container for the web content-->
    <div class="message">
-
    </div><!--End Message Container-->
    <div class="songcolumn">
-   		<div style="margin-left:50px;margin-top:25px;" class="header_title"><h2>Song List</h2></div>
+   		<div style="    margin-left: 292px;  margin-top: 30px;  margin-bottom: 30px;" class="header_title"><h2>Song List</h2></div>
 
-   		<form action="votesong.php" method="post">
+   		<form action="votesong.php" method="POST">
 			<div class="container">
 			<?php
 			/*error_reporting(E_ERROR);
@@ -116,20 +112,24 @@
                             if($count == 0){
                                 echo "<tr>"; //Start table row
                         }
-                            echo "<td width=80><img src=../Administrator/PHP/upload_images/album/$image width=90 height=80></td>";
-														// echo $s='<input type="radio" value="'.$id.'" name="song">';
-                            echo "<td>$name<br/>$singer<br/><input type='radio' style='opacity:1;' value='$id' name='song'></td>";
+                            echo "<td width=80><img style='border-radius:15px;'src=../Administrator/PHP/upload_images/album/$image width=90 height=80></td>";
+							// echo $s='<input type="radio" value="'.$id.'" name="song">';
+                            echo "<td>$name<br>$singer<br>";
+							echo '<label style="color:black;font-size: 18px;">';
+							echo '<input class= "with-gap" type="radio" name="song" value="'.$id.'">';
+							echo '<span>Vote</span>';
+							echo '</label>';
                             }else{
                                 $count = 0;
                                 echo "</tr><tr>"; //End table row
-                                echo "<td width=80><img src=../Administrator/PHP/upload_images/album/$image width=90 height=80></td>";
-																// echo $s='<input  type="radio" value="'.$id.'" name="song">';
-                                echo "<td>$name<br/>$singer<br><input  type='radio' style='opacity:1;'value='$id' name='song'></td>";
+                                echo "<td width=80><img style='border-radius:15px;' src=../Administrator/PHP/upload_images/album/$image width=90 height=80></td>";
+								// echo $s='<input class="with-gap" type="radio" value="'.$id.'" name="song">'
+								echo "<td>$name<br>$singer<br>";
+								echo '<label style="color:black;font-size: 18px;">';
+								echo '<input class= "with-gap" type="radio" name="song" value="'.$id.'">';
+								echo '<span >Vote</span>';
+								echo '</label>';
                             }
-				// 										<label style="color:grey;font-size: 18px;">
-        //     <input type="radio" name="type" value=" bank transfer to ">
-        //     <span>Transfer to other account(NEFT)</span>
-        // </label>
                         $count++;
                     }
             echo "</tr></table>";
@@ -137,6 +137,9 @@
 					</div>
 					<div class="center">
 						<input type="submit" class="btn brand z-depth-0" style="background-color:#232931;"value="Vote Song" name="submit" id="sub"/>
+					</div>
+					<div class="container">
+						<hr>
 					</div>
 
      </form>
@@ -168,5 +171,6 @@
 			?>
    </div><!--End song column container-->
 </div><!--End Container-->
+
 </body>
 </html>
