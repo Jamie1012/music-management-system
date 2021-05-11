@@ -1,15 +1,17 @@
 @charset "utf-8";
 /* CSS Document */
-html,body{ padding:0px; margin:0px; background:url(../Templates/body_back1.jpg) #FFF repeat-x;}
+/* hey this is css blah blah*/
+html,body{ padding:0px;
+	margin:0px;
 
 .header_menu{
-	height:40px;
+	/* height:40px;
 	width:100%;
 	background:url(../Templates/menu_back.jpg) repeat-x;
 	-moz-box-shadow:0px 0px 8px #000;
 	-webkit-box-shadow:0px 0px 8px #000;
 	-box-shadow:0px 0px 8px #000;
-	border:1px medium #000;
+	border:1px medium #000; */
 }
 .menu{
 	width:920px;
@@ -43,20 +45,19 @@ html,body{ padding:0px; margin:0px; background:url(../Templates/body_back1.jpg) 
 	opacity:0.9;
 }
 .header_under{
-	background:url(../Templates/headerunder.png) repeat-x;
+	/* background:url(../Templates/headerunder.png) repeat-x;
 	width:100%;
-	height:32px;
+	height:10px; */
 }
 
 .header_wrapper{
 	width:100%;
-	height:22px;
+	height:30px;
 	padding:0px;
 	margin:0px;
-	background:#3C3C3C;
 }
 .header_wrapper a{ text-decoration:none; color:#09F}
-.header_wrapper a:hover{ text-decoration:underline; color:#FFF}
+.header_wrapper a:hover{ text-decoration:none; color:#FFF}
 .login{
 	font-family:Arial, Helvetica, sans-serif;
 	color:#FFF;
@@ -100,25 +101,25 @@ Container and Inner Container Style
 	height:1108px;
 	padding:0px;
 	position:relative;
-	margin-top:16px;
+	margin-top:35px;
 	margin-left:auto;
 	margin-right:auto;
 
 }
 .home_content{
 	width:100%;
-	height:315px;
+	height:400px;
 	padding:0px;
 }
 
 .home_content .banner{
 	height:315px;
 	width:688px;
-	background:#FFF;
+	/* background:#FFF;
 	-moz-box-shadow:0px 0px 10px #B0B0B0;
 	-webkit-box-shadow:0px 0px 10px #B0B0B0;
-	-khtml-box-shadow:0px 0px 10px #B0B0B0;
-	border:1.5em medium #B0B0B0;
+	-khtml-box-shadow:0px 0px 10px #B0B0B0; */
+	/* border:1.5em medium #B0B0B0; */
 }
 .vote_container{
 	float:right;
@@ -126,17 +127,20 @@ Container and Inner Container Style
 	width:222px;
 	position:relative;
 	margin-top:-315px;
-	-moz-box-shadow:0px 0px 10px #FFF;
-	-webkit-box-shadow:0px 0px 10px #FFF;
-	-khtml-box-shadow:0px 0px 10px #FFF;
+	-moz-box-shadow:0px 0px 0px #FFF;
+	-webkit-box-shadow:0px 0px 0px #FFF;
+	-khtml-box-shadow:0px 0px 0px #FFF;
 	border:1px solid #CCC;
 	background:#E9E9E9;
 }
 .img_container{
-	margin-top:18px;
+	margin-top:20px;
 	padding:0px;
 	width:918px;
 	height:190px;
+}
+#class_col0{
+	float:left;
 }
 #class_col1{
 	height:173px;
@@ -146,7 +150,9 @@ Container and Inner Container Style
 	-webkit-box-shadow:0px 0px 10px #B0B0B0;
 	-khtml-box-shadow:0px 0px 10px #B0B0B0;
 	border:1.5em medium #B0B0B0;
-	float:left
+	float:left;
+	border-radius: 15px;
+	margin-left: 10px;
 	}
 #class_col2{
 	height:173px;
@@ -158,6 +164,7 @@ Container and Inner Container Style
 	border:1.5em medium #B0B0B0;
 	float:right;
 	margin-right:-2px;
+	border-radius: 15px;
 }
 #class_col3{
 	height:173px;
@@ -169,6 +176,7 @@ Container and Inner Container Style
 	border:1.5em medium #B0B0B0;
 	float:right;
 	margin-right:10px;
+	border-radius: 15px;
 }
 #class_col4{
 	height:173px;
@@ -179,6 +187,7 @@ Container and Inner Container Style
 	-khtml-box-shadow:0px 0px 10px #B0B0B0;
 	border:1.5em medium #B0B0B0;
 	margin-left:233px;
+	border-radius: 15px;
 }
 .header{
 	height:36px;
@@ -196,7 +205,7 @@ Container and Inner Container Style
 #header_vote_title{
 	padding:10px;
 	text-align:center;
-	font-family:Bernard MT Condensed;
+	font-family: 'Montserrat', sans-serif;
 	border-bottom:1px solid #999;
 	color:#09F;
 }
@@ -272,7 +281,7 @@ label{
 	color:#06F;
 }
 #vote1:hover{border:1px solid #09F; background:#FFF;}
-#img{ margin-left:3px; margin-top:4px;}
+#img{ margin-left:3px; margin-top:4px; border-radius: 15px; }
 .col1{
 	height:570px;
 	width:260px;
@@ -325,7 +334,7 @@ Error/Success Messages
 .error{
 	padding:5px;
 	height:15px;
-	margin-bottom:5px;
+	margin-bottom:2px;
 	border:solid 2px #FF9D9D;
 	background:#FDE4E1;
 	color:#CB4721;
@@ -354,6 +363,11 @@ Error/Success Messages
 	color:#09F;
 }
 .link:hover{ color:#06F; text-decoration:underline;}
+
+/* BOOTSTRAP */
+.btn-outline-warning{
+	height: 10px;
+}
 /*
 -----------------------------------
 End Error/Success Messages
@@ -363,6 +377,9 @@ End Error/Success Messages
 Footer Style
 -----------------------------------
 */
+
+
+
 .footer_wrapper{width:100%; height:80px; margin-top:3px; background:#4A4A4A; border-top:5px solid #0080FF;}
 .footer_menu{ width:920px; margin-left:auto; margin-right:auto;}
 .footer_menu ul{ padding:0px; margin:0px; list-style:none; float:left; border-bottom:1px solid #666; width:100%; padding-bottom:8px; padding-top:6px;}

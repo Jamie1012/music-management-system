@@ -1,7 +1,7 @@
 <?php
 session_start();
 if(isset($_SESSION['user_id'])==0){
-header("location:../../loginpage.php");	
+header("location:../../loginpage.php");
 }else{
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -21,7 +21,7 @@ header("location:../../loginpage.php");
 				$today = date("F j, Y");
 				echo '&nbsp;Today is '.$today;
 				?>
-            <ul>    	
+            <ul>
                 <li><a href="logout.php">Admin Logout</a></li>
             </ul>
    	</div>
@@ -47,9 +47,9 @@ header("location:../../loginpage.php");
         </div>
     	<ul>
         	<li><a href="Feedbacks.php"><img src="../Templates/list-style.png" height="8"  width="8"/>&nbsp;Feed Backs</a></li>
-            <li><a href="AddUser.php"><img src="../Templates/list-style.png" height="8"  width="8"/>&nbsp;Add User</a></li>        
+            <li><a href="AddUser.php"><img src="../Templates/list-style.png" height="8"  width="8"/>&nbsp;Add User</a></li>
         </ul>
-    </div> 
+    </div>
     <!--End Sidebar-->
     <!--Start Web Content-->
     <div class="home_content">
@@ -58,7 +58,7 @@ header("location:../../loginpage.php");
         <tr bgcolor="">
         	<th class="table">Name</th><th class="table">Email Address</th><th class="table">Address</th><th class="table">Message</th><th class="table">Action</th>
         </tr>
-        <?php 
+        <?php
 		require_once('connect.php');
 		//pagination
 		$line =0;
@@ -74,14 +74,14 @@ header("location:../../loginpage.php");
 		$back = $eu - $limit;
 		$next = $eu + $limit;
 		if(strlen($start) > 0 && !is_numeric($start)){
-			echo 'Data Error';	
+			echo 'Data Error';
 			exit();
-		}			
+		}
 		//Get all data from the table
 		$feedbacks = mysqli_query($connect,"SELECT * FROM tblfeedback LIMIT $eu,$limit");
 		while($row = mysqli_fetch_array($feedbacks)){
 			if($row['status']==1){
-				$fontcolor = '#FF3C3C';	
+				$fontcolor = '#FF3C3C';
 			}
 			if($line == 1){
 				$bgcolor = '#F5F5F5';
@@ -111,30 +111,30 @@ header("location:../../loginpage.php");
             </tr>
         <?php
 		}
-		 
+
 
 						if($numpage>$limit){
 							echo "<table align=center><tr><td align=left>";
 							if($back>=0){
-								echo "<a href=$page?start=$back>PREV</a>";	
+								echo "<a href=$page?start=$back>PREV</a>";
 							}
 							echo "</td><td align=center width=50>";
 								$l = 1;
 								for($i = 0; $i < $numpage;$i = $i + $limit){
 									if($i<>$eu){
-										echo "<a href=$page?start=$i><font color=red>$l</font></a>";	
+										echo "<a href=$page?start=$i><font color=red>$l</font></a>";
 									}else{
-										echo "<font color=red>$l</font>";	
+										echo "<font color=red>$l</font>";
 									}
 									$l = $l + 1;
 								}
 							echo "</td><td align=right>";
 							if($thisp<$numpage){
-								echo "<a href=$page?start=$next>NEXT</a>";	
+								echo "<a href=$page?start=$next>NEXT</a>";
 							}
 							echo "</td></tr></table>";
 						}
-					?>   
+					?>
         </table>
     </div>
      <!--End Web Content-->
@@ -143,7 +143,7 @@ header("location:../../loginpage.php");
 <div class="footer_wrapper">
     <div class="footer_menu">
     	<ul>
-        	<li>Find the us <a href="Frontend/Contacts.php">BMEG Music Office</a> or <a href="Frontend/Contacts.php">contact us</a>  for more information</li>  
+        	<li>Find the us <a href="Frontend/Contacts.php">BMEG Music Office</a> or <a href="Frontend/Contacts.php">contact us</a>  for more information</li>
         </ul>
         <br /> <br /> <br />
         <span style="color:#999; font-size:14px; margin-top:10px;">&copy;2012 BMEG Music, Inc.</span>
@@ -151,6 +151,6 @@ header("location:../../loginpage.php");
 </div>
 </body>
 </html>
-<?php 	
+<?php
 }
 ?>

@@ -1,6 +1,6 @@
 @charset "utf-8";
 /* CSS Document */
-html,body{ padding:0px; margin:0px; background:url(../Templates/body_back1.jpg) #fff top repeat-x;}
+html,body{ padding:0px; margin:0px; background:url("https://wallpaperaccess.com/full/781329.jpg") ;}
 
 .header_menu{
 	height:40px;
@@ -73,7 +73,7 @@ html,body{ padding:0px; margin:0px; background:url(../Templates/body_back1.jpg) 
 .login ul li{
 	position:relative;
 	list-style:none;
-} 
+}
 .login ul li a{
 	text-decoration:none;
 	line-height:20px;
@@ -110,7 +110,7 @@ Container and Inner Container Style
 	float:right;
 	margin-right:8px;
 	padding:0px;
-	
+
 }
 .home_content .header{
 	font-weight:bold;
@@ -176,7 +176,7 @@ Form Style Style
 	width:640px;
 	height:500px;
 	padding:7px 7px;
-	
+
 }
 label{
 	width:105px;
@@ -234,7 +234,7 @@ input,select{
 .table{
 	height:35px;
 	background:#5B5B5B;
-	color:#FFF; 
+	color:#FFF;
 	border-bottom:5px solid #BAFD3E;
 	border-top:1px dotted #CCC;
 	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
@@ -298,13 +298,13 @@ Error/Success Messages
 	margin-bottom:5px;
 	border:solid 2px #C0F0B9;
 	background:#D5FFC6;
-	color:#48A41C; 
+	color:#48A41C;
 	font-family:Arial, Helvetica, sans-serif;
-	font-size:14px; 
+	font-size:14px;
 	font-weight:bold;
 	text-align:center;
 }
-.link{ 
+.link{
 	text-decoration:none;
 	font-family:Georgia, "Times New Roman", Times, serif;
 	font-size:10px;
@@ -328,4 +328,3 @@ Footer Style
 .footer_menu ul li{ line-height:20px; padding-top:10px; color:#999; font-weight:500px;}
 .footer_menu ul li a{text-decoration:none;line-height:20px;font-family:Arial, Helvetica, sans-serif;font-size:12px;;text-shadow:1px 1px 5px #333;color:#FFF; font-weight:560}
 .footer_menu ul li a:hover{ text-decoration:underline;)
-

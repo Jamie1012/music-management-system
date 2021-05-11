@@ -3,50 +3,80 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>BMEG Music | Licensing</title>
+<!-- BOOTSTRAP -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<!-- GOOGLE FONTS -->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+<script type="text/javascript" src="Javascript/jquery-1.6.2.min.js"></script>
+<script type="text/javascript" src="Javascript/jquery-1.6.2.min.js"></script>
 <link rel="stylesheet"  type="text/css" href="CSS/index.css"/>
 </head>
 
 <body>
-<div class="header_wrapper">
-	<div class="login">
-            <?php
-			$today = date("F j, Y");
+	<nav style="background-color: #232931;
+    color: #fff; width:100%;" class="navbar navbar-expand-lg navbar-light menu">
+		<div class="collapse navbar-collapse" id="navbarNav">
+			<ul class="navbar-nav">
+				<li class="nav-item active">
+					<a  style="font-size: 1.25rem; color:#f4f3f3;"class="nav-link" href="#" style="color: #f4f3f3;font-family:Montserrat;font-weight:normal;" >MUSIQUE</a>
+				</li>
+				<li class="nav-item active">
+					<a class="nav-link" href="../index.php" style="color: #f4f3f3;" >HOME </a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="Albums.php"style="color: #f4f3f3;">ALBUMS</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="Licensing.php" style="color: #f4f3f3;">LICENSING</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="Songs.php" style="color: #f4f3f3;" >VOTE</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="AboutUs.php" style="color: #f4f3f3;">ABOUT US</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link " href="News.php" style="color: #f4f3f3;">NEWS</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+
+<nav class="menu_under navbar navbar-light bg-light">
+  <form class="form-inline">
+		<div class="login">
+						<?php
+			$today = date('F j, Y');
 			echo '&nbsp;Today is '.$today;
 			?>
-            &nbsp;&nbsp;&nbsp;<a href="#" id="fback">Submit Feedback</a>
-            <ul>
-               <li><a href="../loginpage.php">Admin Login</a></li>
-            </ul>
-   	</div>
-</div>
-<!--Start Menu-->
-<div class="header_menu">
-	<div class="menu">
-    	<ul>
-        	<li><a href="../index.php">HOME</a></li>
-            <li><a href="Albums.php">ALBUMS</a></li>
-            <li><a href="Licensing.php">LICENSING</a></li>
-            <li><a href="Songs.php">VOTE</a></li>
-            <li><a href="AboutUs.php">ABOUT US</a></li>
-            <li><a href="News.php">NEWS</a></li>           
-    	</ul>
-    </div>
-</div>
-<!--End Menu-->
-<div class="header_under"></div>
+							&nbsp;&nbsp;&nbsp;<a class=" nav-item btn btn-sm btn-outline-secondary" href="Frontend/FeedbackForm.php" id="fback">Submit Feedback</a>
+
+							<a class="nav-item btn btn-sm btn-outline-secondary adminbtn" href="loginpage.php">Admin Login</a>
+					<!-- <ul>
+							<li><a class="nav-item btn btn-sm btn-outline-secondary" href="loginpage.php">Admin Login</a></li>
+					</ul> -->
+		</div>
+  </form>
+</nav>
+
 	<!--Start Container for the web content-->
 	<div class="playlist_wrapper">
     	<div class="submenu">
-        	<ul>     
+        	<ul>
             	<li><a href="Licensing.php">Licensing</a></li>
                 <li><a href="Advertisement.php">Advertisement</a></li>
-                <li><a href="Merchandising.php">Merchandising</a></li>          
+                <li><a href="Merchandising.php">Merchandising</a></li>
             </ul>
         </div><!--End Submenu-->
         <div class="pcontainer">
         	<h3 style="color:#06F;">Licensing</h3>
             <hr />
-        	<p>BMEG Music Publishing is nothing without the songwriters whose hard work and creativity forms the basis of the 1.3 million songs in our catalog. It’s our job to ensure that we create as many opportunities as possible for them and their music, and we make full use of our comprehensive knowledge of music and brands to achieve that.</p> 
+        	<p>BMEG Music Publishing is nothing without the songwriters whose hard work and creativity forms the basis of the 1.3 million songs in our catalog. It’s our job to ensure that we create as many opportunities as possible for them and their music, and we make full use of our comprehensive knowledge of music and brands to achieve that.</p>
             <p>But the field of music licensing has traditionally been notoriously difficult for clients to navigate, with the users of music struggling to find their way through the maze of rights and clearances in order to get access to the songs they need. BMEG Music Publishing is committed to changing that, aiming to make music licensing as easy as possible by working in partnership with clients across all sectors.</p>
             <p>We have teams of dedicated music specialists working in offices across the globe who understand the intricacies of every market and licensing sector, and who work hand-in-hand with clients across the creative industries every step of the way.  At BMEG Music Publishing, we understand that every project is different, and will use our years of expertise to make sure that you get exactly the right license to suit all your commercial needs.</p>
             <p>Of course, it goes without saying that by working with BMEG Music Publishing, you’re accessing the most comprehensive popular music catalog in the world. Whether you’re looking for a timeless classic, a current chart hit, or even an obscure song from the archives, we’ve got music for every budget and every creative need.</p>
@@ -57,7 +87,7 @@
 <div class="footer_wrapper">
     <div class="footer_menu">
     	<ul>
-        	<li>Find the us <a href="Contacts.php">BMEG Music Office</a> or <a href="Contacts.php">contact us</a> for more information</li>    
+        	<li>Find the us <a href="Contacts.php">BMEG Music Office</a> or <a href="Contacts.php">contact us</a> for more information</li>
         </ul>
         <br /> <br /> <br />
         <span style="color:#999; font-size:14px; margin-top:10px;">&copy;2012 BMEG Music, Inc.</span>

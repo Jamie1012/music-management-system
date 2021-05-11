@@ -1,7 +1,12 @@
 @charset "utf-8";
 /* CSS Document */
-html,body{ padding:0px; margin:0px; background:url(../Templates/body_back1.jpg) #FFF repeat-x;}
-
+/* Holaaaaaaaaaaaaaa */
+html,body{ padding:0px;
+	margin:0px;
+	background:url("https://wallpaperaccess.com/full/781329.jpg") ;}
+	.navbar-light .navbar-brand{
+		color: #fff;
+	}
 .header_menu{
 	height:40px;
 	width:100%;
