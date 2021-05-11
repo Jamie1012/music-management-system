@@ -336,6 +336,7 @@ $(function() {
 .release{
 	background-color: #232931;
 	color: #fff;
+
 }
 .header{
 	margin-top: 50px;
@@ -356,6 +357,9 @@ $(function() {
 }
 .images{
 	left:40px;
+}
+.imgg:hover{
+	transform: scale(1.1);
 }
 </style>
 </head>
@@ -501,19 +505,19 @@ $(function() {
 <div class="row release ">
 <div class="col1 col-xs-6"><!--Start Bottom web content-->
    	 <div class="header">
-    		<div id="header_title" style="font-family: 'Montserrat', sans-serif;font-weight: 900;margin-left: 134px;">NEW RELEASE</div>
+    		<div id="header_title" style="font-family: 'Montserrat', sans-serif;font-weight: 100;margin-left: 134px;margin-bottom:20px;font-size:1.5rem;">NEW RELEASE</div>
             <?php
 			require_once('Administrator/PHP/connect.php');
-			$sql = mysqli_query($connect,"SELECT * FROM tblalbum ORDER BY id DESC LIMIT 5");
+			$sql = mysqli_query($connect,"SELECT * FROM tblalbum ORDER BY id DESC LIMIT 3");
 			while($rowAlbum = mysqli_fetch_array($sql)){
 			?>
-            <div class="album_holder">
+            <div  class="album_holder">
             	<div class="content_holder">
-                	<div class="content" style="font-family: 'Montserrat', sans-serif; margin-left: 134px;margin-bottom: 20px; ">
-                    <?php echo "<img  src=Administrator/PHP/upload_images/album/$rowAlbum[albumimage] height=50 width=60  >"?>
+                	<div class="content" style="font-family: 'Montserrat', sans-serif; margin-left: 134px;margin-bottom: 20px; margin-bottom:30px;">
+                    <?php echo "<img class='imgg' style='border-radius:15px;' src=Administrator/PHP/upload_images/album/$rowAlbum[albumimage] height=70 width=80  >"?>
                     <div class="left">
                     <?php
-						echo '<label  id=title>&nbsp;<a class="btn btn-outline-secondary btn-sm" href=Frontend/ViewSongs.php?id='.$rowAlbum['id'].' id=link>'.$rowAlbum['albumname'].'</a class></label><br/>';
+						echo '<label  id=title>&nbsp;<a style="color:white;"class="btn btn-outline-secondary btn-sm" href=Frontend/ViewSongs.php?id='.$rowAlbum['id'].' id=link>'.$rowAlbum['albumname'].'</a class></label><br/>';
 						echo '<label id=title1>&nbsp;'.$rowAlbum['albumsinger'].'</label><br/>';
 						// echo '<label id=title1>&nbsp;'.$rowAlbum['albumwriter'].'</label>';
 					?>

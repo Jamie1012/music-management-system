@@ -103,41 +103,41 @@ function validate(){
                 <?php } ?>
             </ul>
     </div><!--End Sidebar-->
+		<div style="margin-left: 40px;"class="search_box"><!--Start search box container-->
+				<form name="search" id="search" method="post" action="Search.php" onsubmit="return validate()">
+						<table>
+								<tr>
+										<td><h3>CATEGORY</h3></td>
+										<td>
+												<select style="margin-left: 30px;
+																			 margin-top: 30px;
+																			 margin-right: 30px;
+																			 margin-bottom: 30px;
+																			 padding-top: 2px;
+																			 padding-bottom: 2px;
+																			 padding-right: 2px;
+																			 padding-left: 2px;" name="category">
+													<option value="SELECT" selected="selected"> SELECT CATEGORY </option>
+													<?php
+						$getCat= mysqli_query($connect,"SELECT id,catname FROM tblcategory");
+						while($rowCat = mysqli_fetch_array($getCat)){
+						?>
+														<option value="<?php echo $rowCat['id']?>"><?php echo $rowCat['catname']?></option>
+													<?php } ?>
+													</select>
+											</td>
+											<td>
+												<input type="text" id="search" name="search" placeholder="Enter Album Name" size="39"/>
+											</td>
+											<td>
+												<input style="font-family:Montserrat;margin-left: 10px;"class="btn btn-warning " type="submit" value="Search" id="sub"/>
+									</td>
+									</tr>
+							</table>
+					</form>
+		</div><!--End search box container-->
+    <div style=" padding-top: 10px; color: #fff;background-color: #232931;"class="col2"><!--Start second column-->
 
-    <div class="col2"><!--Start second column-->
-    	<div style="margin-left: 40px;"class="search_box"><!--Start search box container-->
-        	<form name="search" id="search" method="post" action="Search.php" onsubmit="return validate()">
-            	<table>
-                	<tr>
-                    	<td><h3>CATEGORY</h3></td>
-                    	<td>
-                        	<select style="margin-left: 30px;
-                                         margin-top: 30px;
-                                         margin-right: 30px;
-                                         margin-bottom: 30px;
-                                         padding-top: 2px;
-                                         padding-bottom: 2px;
-                                         padding-right: 2px;
-                                         padding-left: 2px;" name="category">
-                            <option value="SELECT" selected="selected"> SELECT CATEGORY </option>
-                            <?php
-							$getCat= mysqli_query($connect,"SELECT id,catname FROM tblcategory");
-							while($rowCat = mysqli_fetch_array($getCat)){
-							?>
-                            	<option value="<?php echo $rowCat['id']?>"><?php echo $rowCat['catname']?></option>
-                            <?php } ?>
-                            </select>
-                        </td>
-                        <td>
-                        	<input type="text" id="search" name="search" placeholder="Enter Album Name" size="39"/>
-                        </td>
-                        <td>
-                        	<input style="font-family:Montserrat;margin-left: 10px;"class="btn btn-warning " type="submit" value="Search" id="sub"/>
-                		</td>
-                    </tr>
-                </table>
-            </form>
-    	</div><!--End search box container-->
      	<div style="margin-left: 40px;" id="header_title"><h3>Album List</h3></div>
   <?php
 		error_reporting(E_ERROR);
@@ -193,21 +193,21 @@ function validate(){
 			if($numpage>$limit){
 				echo "<table align=center><tr><td align=left>";
 					if($back>=0){
-						echo "<a href=$page?start=$back>PREV</a>";
+						echo "<a href=$page?start=$back class='btn btn-warning'>PREV</a>";
 					}
 						echo "</td><td align=center width=200>";
 							$l = 1;
 								for($i = 0; $i < $numpage;$i = $i + $limit){
 									if($i<>$eu){
-										echo "<a href=$page?start=$i><font color=red>$l</font></a>";
+										echo "<a href=$page?start=$i><font style='margin:10px;'class='btn btn-warning' color=red >$l</font></a>";
 									}else{
-										echo "<font color=red>$l</font>";
+										echo "<font style='margin:10px;' class='btn btn-warning' color=red >$l</font>";
 									}
 										$l = $l + 1;
 									}
 						echo "</td><td align=right>";
 							if($thisp<$numpage){
-								echo "<a  href=$page?start=$next>NEXT</a>";
+								echo "<a  href=$page?start=$next class='btn btn-warning'>NEXT</a>";
 							}
 				echo "</td></tr></table>";
 			}
