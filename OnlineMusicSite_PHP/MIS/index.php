@@ -417,7 +417,7 @@ $(function() {
 
 
 <!-- <div class="header_under"></div> -->
-<section style="background-color:#ff4c68;"class="slideshowV ">
+<section class="slideshowV ">
 <div class="container_wrapper"><!--Start Container for the web content-->
     <div class="home_content"> <!--Start Web Content-->
         <div class="banner">
