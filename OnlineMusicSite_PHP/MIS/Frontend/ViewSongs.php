@@ -20,7 +20,9 @@ $albumimage = $rowImage['albumimage'];
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
-
+<!-- MATERIALIZE CDN  -->
+<!-- Compiled and minified CSS -->
+	 <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
 <link rel="stylesheet" type="text/css" href="Javascript/skins/jplayer-blue-monday/jplayer.blue.monday.css" />
 <script type="text/javascript"  src="Javascript/jquery-1.6.2.min.js"></script>
 <script type="text/javascript" src="Javascript/js/jquery.jplayer.min.js"></script>

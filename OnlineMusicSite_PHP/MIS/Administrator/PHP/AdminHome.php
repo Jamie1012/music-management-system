@@ -70,7 +70,7 @@ header("location:../../loginpage.php");
 	  <h1 class="display-4">Hello Admin <?php echo $_SESSION['name']?></h1>
 	  <p class="lead">Now you can access and edit your site the way you like it .</p>
 	  <hr class="my-4">
-	  <p>Choose the option you want to edit and then go ahead .We are glas to have you as our Admin user .</p>
+	  <p>Choose the option you want to edit and then go ahead .We are glad to have you as our Admin user .</p>
 		<a class="btn btn-primary btn-lg" href="Feedbacks.php">&nbsp;Feed Backs</a>
 	  <a class="btn btn-primary btn-lg"  href="AddUser.php">&nbsp;Add User</a>
 	    </div>

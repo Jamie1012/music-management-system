@@ -112,17 +112,18 @@ header("location:../../loginpage.php");
 						}
 					?>
                     <tr style="background-color:#fff;" align="center" bgcolor="<?php echo $bgcolor?>">
-                    	<td align="center" width="20"><?php echo $rowCat['id'] ?></td>
-                        <td align="center"><?php echo $rowCat['albumname'] ?></td>
-                        <td align="center"><?php echo $rowCat['albumsinger'] ?></td>
-                        <td align="center"><?php echo $rowCat['albumwriter'] ?></td>
+                    	<td align="center" ><?php echo $rowCat['id']; ?></td>
+                        <td align="center"><?php echo $rowCat['albumname'] ;?></td>
+                        <td align="center"><?php echo $rowCat['albumsinger'] ;?></td>
+                        <td align="center"><?php echo $rowCat['albumwriter'] ;?></td>
                         <!-- <td align="center" width="60"><?php echo "<img src=upload_images/album/$rowCat[albumimage] width=50 height=40"?></td> -->
                         <td align="center" >
 
-                        <a href="AdminViewSongs.php?id=<?php echo $rowCat['id']?>" class="link">View Songs</a>&nbsp;|&nbsp;
-                        <a href="AdminSong.php?id=<?php echo $rowCat['id']?>" class="link">Add Song</a>&nbsp;|&nbsp;
-                        <a href="AdminEditAlbum.php?id=<?php echo $rowCat['id']?>" class="link">Edit</a>&nbsp;|&nbsp;
-                        <a href="AdminDeleteAlbum.php?id=<?php echo $rowCat['id']?>" class="link" onclick="return confirm('Do you want to delete this?');">Delete</a></td>
+                        <a href="AdminViewSongs.php?id=<?php echo $rowCat['id'];?>" class="link">View Songs</a>&nbsp;|&nbsp;
+                        <a href="AdminSong.php?id=<?php echo $rowCat['id'];?>" class="link">Add Song</a>&nbsp;|&nbsp;
+                        <a href="AdminEditAlbum.php?id=<?php echo $rowCat['id'];?>" class="link">Edit</a>&nbsp;|&nbsp;
+                        <a href="AdminDeleteAlbum.php?id=<?php echo $rowCat['id'];?>" class="link" onclick="return confirm('Do you want to delete this?');">Delete</a>
+											</td>
                     </tr>
 
                     <?php
