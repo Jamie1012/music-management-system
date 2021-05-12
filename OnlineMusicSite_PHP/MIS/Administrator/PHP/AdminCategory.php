@@ -89,32 +89,34 @@ window.onload='upload';
             	<div class="error">Error Message</div>
                 <div class="success"></div>
 
-            	<form name="category" method="post" id="form" action="AdminAddCategory.php" enctype="multipart/form-data" target="uploadframe">
-                	<div>
+            	<form class="grey lighten-4" name="category" method="post" id="form" action="AdminAddCategory.php" enctype="multipart/form-data" target="uploadframe">
+                  <div class="container">
+					<div>
                          <iframe src="" id="uploadframe" name="uploadframe"
                          style="width:0px; height:0px; border:0px;"></iframe>
                     </div>
 										<br><br>
                 	<div>
-                    	<label for="Category">Song Category</label>
+                    	<label style="font-size:18px; color:black;" for="Category">Song Category</label>
                         <input type="text" name="txtcat" id="txtcat" placeholder="Category" size="39" />
                     </div>
 										<br><br>
                     <div>
-                    	<label for="Description">Description</label>
+                    	<label style="font-size:18px; color:black;" for="Description">Description</label>
                         <textarea rows="8" cols="50" placeholder="Song Description" name="txtdesc" id="txtdesc"></textarea>
                     </div>
 										<br><br>
                     <div>
-                    	<label for="Image">Song Image</label>
+                    	<label style="font-size:18px; color:black;" for="Image">Song Image</label>
                         <input type="file" name="txtimage" id="txtimage"/>
                     </div>
 										<br><br>
-                    <div>
+                    <div class="center">
                     	<input class="btn"type="submit" value="Add Category" id="button1"/>
                         <input class="btn" type="reset" value="Cancel" id="button2"/>
                     </div>
 										<br><br>
+				  </div>
                 </form>
 
             </div>

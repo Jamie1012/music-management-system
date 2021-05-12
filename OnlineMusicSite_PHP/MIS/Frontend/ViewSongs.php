@@ -10,6 +10,10 @@ $albumimage = $rowImage['albumimage'];
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- MATERIALIZE CDN  -->
+<!-- Compiled and minified CSS -->
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
+
 <title>MUSIQUE Music</title>
 <!-- BOOTSTRAP -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -20,9 +24,6 @@ $albumimage = $rowImage['albumimage'];
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
-<!-- MATERIALIZE CDN  -->
-<!-- Compiled and minified CSS -->
-	 <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
 <link rel="stylesheet" type="text/css" href="Javascript/skins/jplayer-blue-monday/jplayer.blue.monday.css" />
 <script type="text/javascript"  src="Javascript/jquery-1.6.2.min.js"></script>
 <script type="text/javascript" src="Javascript/js/jquery.jplayer.min.js"></script>
@@ -89,11 +90,11 @@ jQuery(document).ready(function() {
 
 				if (poster_use) {
 					if (this.playlist[i].poster != null)
-						listItem += "<a href='#' id='" + this.cssId.playlist + this.instance + "_item_" + i +"' tabindex='1'>"+ "<img src='" +this.playlist[i].poster+"' />"+ this.playlist[i].name +"</a>";
+						listItem += "<a href='#' id='" + this.cssId.playlist + this.instance + "item" + i +"' tabindex='1'>"+ "<img src='" +this.playlist[i].poster+"' />"+ this.playlist[i].name +"</a>";
 					else
-						listItem += "<a href='#' id='" + this.cssId.playlist + this.instance + "_item_" + i +"' tabindex='1'>"+ "<img src='" +default_audio_poster_path+"' />"+ this.playlist[i].name +"</a>";
+						listItem += "<a href='#' id='" + this.cssId.playlist + this.instance + "item" + i +"' tabindex='1'>"+ "<img src='" +default_audio_poster_path+"' />"+ this.playlist[i].name +"</a>";
 				} else {
-					listItem += "<a href='#' id='" + this.cssId.playlist + this.instance + "_item_" + i +"' tabindex='1'>"+ this.playlist[i].name +"</a>";
+					listItem += "<a href='#' id='" + this.cssId.playlist + this.instance + "item" + i +"' tabindex='1'>"+ this.playlist[i].name +"</a>";
 				}
 				// Create links to free media
 				if(this.playlist[i].free) {
@@ -106,7 +107,7 @@ jQuery(document).ready(function() {
 							} else {
 								listItem += " | ";
 							}
-							listItem += "<a id='" + self.cssId.playlist + self.instance + "_item_" + i + "_" + property + "' href='" + value + "' tabindex='1'>" + property + "</a>";
+							listItem += "<a id='" + self.cssId.playlist + self.instance + "item" + i + "_" + property + "' href='" + value + "' tabindex='1'>" + property + "</a>";
 						}
 					});
 					listItem += ")</span>";
@@ -116,7 +117,7 @@ jQuery(document).ready(function() {
 
 				// Associate playlist items with their media
 				$(this.cssSelector.playlist + " ul").append(listItem);
-				$(this.cssSelector.playlist + "_item_" + i).data("index", i).click(function() {
+				$(this.cssSelector.playlist + "item" + i).data("index", i).click(function() {
 					var index = $(this).data("index");
 					if(self.current !== index) {
 						self.playlistChange(index);
@@ -131,9 +132,9 @@ jQuery(document).ready(function() {
 				if(this.playlist[i].free) {
 					$.each(this.playlist[i], function(property,value) {
 						if($.jPlayer.prototype.format[property]) { // Check property is a media format.
-							$(self.cssSelector.playlist + "_item_" + i + "_" + property).data("index", i).click(function() {
+							$(self.cssSelector.playlist + "item" + i + "_" + property).data("index", i).click(function() {
 								var index = $(this).data("index");
-								$(self.cssSelector.playlist + "_item_" + index).click();
+								$(self.cssSelector.playlist + "item" + index).click();
 								$(this).blur();
 								return false;
 							});
@@ -150,8 +151,8 @@ jQuery(document).ready(function() {
 			}
 		},
 		playlistConfig: function(index) {
-			$(this.cssSelector.playlist + "_item_" + this.current).removeClass("jp-playlist-current").parent().removeClass("jp-playlist-current");
-			$(this.cssSelector.playlist + "_item_" + index).addClass("jp-playlist-current").parent().addClass("jp-playlist-current");
+			$(this.cssSelector.playlist + "item" + this.current).removeClass("jp-playlist-current").parent().removeClass("jp-playlist-current");
+			$(this.cssSelector.playlist + "item" + index).addClass("jp-playlist-current").parent().addClass("jp-playlist-current");
 			this.current = index;
 			$(this.cssSelector.jPlayer).jPlayer("setMedia", this.playlist[this.current]);
 		},
@@ -276,9 +277,10 @@ ul.jp-controls li a.disabled {
   </form>
 </nav>
 <!--Start Container for the web content-->
+<div class="container">
 	<div class="playlist_wrapper">
 
-        	<div  style="margin-left:20%;margin-top:70px;"class="playlist_info">
+        	<div style="margin-left:1%;margin-top:70px;"class="playlist_info">
             	<table style="padding:15px 15px;" cellspacing="0">
                 <?php
 				$sql = mysqli_query($connect,"SELECT
@@ -322,11 +324,12 @@ ul.jp-controls li a.disabled {
 				?>
                 </table>
             </div><!--End plalist_info-->
+		<div class="center">
             <div class="playlist">
             	<div id="jquery_jplayer_1" class="jp-jplayer"></div>
       				<div class="jp-audio">
-        				<div class="jp-type-playlist">
-          					<div id="jp_interface_1" class="jp-interface">
+        				<div style="width:700px;" class="jp-type-playlist">
+          					<div  style="border:0px;border-radius:15px;"  id="jp_interface_1" class="jp-interface">
             					<ul class="jp-controls">
           							<li><a href="#" class="jp-play" tabindex="1">play</a></li>
           							<li><a href="#" class="jp-pause" tabindex="1">pause</a></li>
@@ -336,7 +339,7 @@ ul.jp-controls li a.disabled {
           							<li><a href="#" class="jp-previous" tabindex="1">previous</a></li>
 		  							<li><a href="#" class="jp-next" tabindex="1">next</a></li>
         						</ul>
-        						<div class="jp-progress">
+        						<div style="border-radius:15px;" class="jp-progress">
           							<div class="jp-seek-bar">
             							<div class="jp-play-bar"></div>
           							</div>
@@ -347,7 +350,7 @@ ul.jp-controls li a.disabled {
                                 <div class="jp-current-time"></div>
                                 <div class="jp-duration"></div>
       						</div>
-      						<div id="jp_playlist_1" class="jp-playlist">
+      						<div style="border:0px;border-radius:15px;"  id="jp_playlist_1" class="jp-playlist">
                             <ul>
                             </ul>
                         </div>
@@ -356,15 +359,5 @@ ul.jp-controls li a.disabled {
             </div><!--End playlist-->
     </div><!--End playlist_wrapper-->
 </div><!--End Container-->
-
-<div class="footer_wrapper">
-    <div class="footer_menu">
-    	<ul>
-        	<li>Find the us <a href="Contacts.php">MUSIQUE Music Office</a> or <a href="Contacts.php">contact us</a> for more information</li>
-        </ul>
-        <br /> <br /> <br />
-        <span style="color:#999; font-size:14px; margin-top:10px;">&copy;2012 MUSIQUE Music, Inc.</span>
-    </div>
-</div>
 </body>
 </html>

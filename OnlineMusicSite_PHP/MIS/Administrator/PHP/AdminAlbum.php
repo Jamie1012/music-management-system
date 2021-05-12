@@ -35,7 +35,7 @@ function upload(){
 window.onload=upload;
 </script>
 <body>
-<div class="header_wrapper">
+<!-- <div class="header_wrapper">
 	<div class="login">
           <?php
 				$today = date("F j, Y");
@@ -46,7 +46,7 @@ window.onload=upload;
                 <li><a href="logout.php">Admin Logout</a></li>
             </ul>
    	</div>
-</div>
+</div> -->
 <nav style=" width: 100%;background-color: #232931;" class="navbar navbar-expand-lg navbar-light menu">
 	<a class="navbar-brand " style="color:#f4f3f3;"href="#" >MUSIQUE</a>
 	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
