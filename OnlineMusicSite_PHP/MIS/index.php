@@ -125,9 +125,10 @@ $(function() {
 	border:1px  solid #FFF;
 	left: 264px;
 	top: 197px;
-	border-width: 10px;
+	border-width: 0px;
+	/* border-width: 10px;
 	border-radius: 10px;
-	border-color: rgba(50, 115, 220, 0.3);
+	border-color: rgba(50, 115, 220, 0.3); */
 }
 
 .vote_container{
@@ -455,7 +456,7 @@ $(function() {
         <div class="vote_container card">
         	<form id="vote" name="vote" method="post"  action="vote.php">
             	<div class=" header_vote">
-                	<div id="header_vote_title">Community Poll Survey</div>
+                	<div id="header_vote_title">VOTE YOUR FAVOURITE GENRE</div>
                     <div id="message">Please Vote for you favorite waray song genre listed below.<a href="ShowVoteStat.php" id="link">See Statistic here!</a></div>
                     <br />
                     <?php
@@ -470,7 +471,7 @@ $(function() {
                     if(isset($_GET['error'])==1){
                     ?>
                     &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                    <div class="alert alert-danger error">Wait after 24 hours</div>
+                    <div class="alert alert-danger error">Wait and vote after 24 hours</div>
                     <?php
 					}
 					if(isset($_GET['success'])==1){
@@ -551,8 +552,8 @@ $(function() {
     		<div  style="font-family: Montserrat;font-weight:900; font-size:35px;margin-left: 220px;margin-top: 20px;padding-top: 30px;">NEWS</div>
                 <div class="news_content" >
                     <ul style="column-count:2;">
-                    	<li><a class="btn btn-outline-dark btn-lg " style="font-family: 'Montserrat', sans-serif; margin-left: 220px;" href="#">MUSIQUE music start community projects</a></li>
-                        <li><a class="btn btn-outline-dark btn-lg "  style="font-family: 'Montserrat', sans-serif; margin-left: 220px;" href="#">Parokya ni Edgar is now in MUSIQUE</a></li>
+                    	<li><a class="btn btn-outline-dark btn-lg " style="font-family: 'Montserrat', sans-serif; margin-left: 220px;" href="https://www.nme.com/news/music/erasure-announce-remix-album-and-share-brand-new-song-secrets-2941167">Erasure announce remix album and share brand new song ‘Secrets’</a></li>
+                        <li><a class="btn btn-outline-dark btn-lg "  style="font-family: 'Montserrat', sans-serif; margin-left: 220px;" href="https://www.nme.com/news/music/alice-cooper-is-selling-his-rare-andy-warhol-painting-2941143">Alice Cooper is selling his rare Andy Warhol painting</a></li>
                         <li><a class="btn btn-outline-dark btn-lg "  style="font-family: 'Montserrat', sans-serif;margin-left: 220px;" href="#">MUSIQUE financial statement release</a></li>
                         <li><a class="btn btn-outline-dark btn-lg "  style="font-family: 'Montserrat', sans-serif;margin-left: 220px;" href="#">MUSIQUE Music Company Annual Report</a></li>
                         <li><a class="btn btn-outline-dark btn-lg "   style="font-family: 'Montserrat', sans-serif;margin-left: 220px;"href="#">MUSIQUE International Expansion</a></li>
@@ -567,7 +568,7 @@ $(function() {
 
     	<div class="col3">
     	<div class="header">
-    		<div id="header_title" style="font-family: Montserrat;font-weight:900; font-size:35px;margin-left: 550px;padding-top: 30px;">FEATURED NEW SONGS</div>
+    		<!-- <div id="header_title" style="font-family: Montserrat;font-weight:900; font-size:35px;margin-left: 550px;padding-top: 30px;">FEATURED NEW SONGS</div> -->
             <?php
 			$sql = mysqli_query($connect,"SELECT tblsongs.id,tblsongs.songfile,tblalbum.albumimage,tblalbum.albumname,tblsongs.songsinger FROM tblsongs,tblalbum WHERE tblsongs.songalbum = tblalbum.id AND songcat = 'OPM' ORDER BY id DESC LIMIT 7");
 			while($rowAlbum = mysqli_fetch_array($sql)){

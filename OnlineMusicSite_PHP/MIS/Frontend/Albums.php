@@ -75,9 +75,9 @@ function validate(){
 			$today = date('F j, Y');
 			echo '&nbsp;Today is '.$today;
 			?>
-							&nbsp;&nbsp;&nbsp;<a class=" nav-item btn btn-sm btn-outline-secondary" href="Frontend/FeedbackForm.php" id="fback">Submit Feedback</a>
+							&nbsp;&nbsp;&nbsp;<a class=" nav-item btn btn-sm btn-outline-secondary" href="../Frontend/FeedbackForm.php" id="fback">Submit Feedback</a>
 
-							<a class="nav-item btn btn-sm btn-outline-secondary adminbtn" href="loginpage.php">Admin Login</a>
+							<a class="nav-item btn btn-sm btn-outline-secondary adminbtn" href="../loginpage.php">Admin Login</a>
 					<!-- <ul>
 							<li><a class="nav-item btn btn-sm btn-outline-secondary" href="loginpage.php">Admin Login</a></li>
 					</ul> -->
@@ -88,7 +88,7 @@ function validate(){
 <div style="" class="container_wrapper"><!--Start Container for the web content-->
     <div style="background-color: #f4bc1c;padding-right: 20px;" class=" list-group sidebar_menu"><!--Sidebar-->
     	<h3 style="margin-left: 40px;  margin-top: 40px; margin-bottom: 30px;"class="header_1">MUSIQUE Music</h3>
-            <ul style="column-count:3">
+            <ul style="column-count:1;">
                 <?php
                 require_once('../Administrator/PHP/connect.php');
                 $getCat= mysqli_query($connect,"SELECT id,catname FROM tblcategory");
@@ -166,7 +166,7 @@ function validate(){
 						echo '<table cellpadding=0 cellspacing=0>';
 							echo '<tr>';
 								echo '<td><label id=album>Album:</label></td>';
-								echo "<td><a href='ViewSongs.php?id=".$rowAlbum['id']."' id=link>".$album."</td>";
+								echo "<td><a style='color:#fff;' href='ViewSongs.php?id=".$rowAlbum['id']."' id=link>".$album."</td>";
 							echo '</tr>';
 							echo '<tr>';
 								echo '<td><label id=a1>Singer:</label></td>';

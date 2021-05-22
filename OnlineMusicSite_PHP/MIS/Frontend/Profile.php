@@ -75,7 +75,7 @@
 	<div style="margin-left: 50px;margin-right: 50px;margin-top: 30px;" class="jumbotron">
 <h1 class="display-4">MUSIQUE Company Profile</h1>
 <hr class="my-4">
-<p>BMEG Music is a global music publishing company and contains one of the world's greatest collections of musical compositions, ranging from well-known standards to new songs by emerging artists.</p>
+<p>MUSIQUE  is a global music publishing company and contains one of the world's greatest collections of musical compositions, ranging from well-known standards to new songs by emerging artists.</p>
 
 </div>
 

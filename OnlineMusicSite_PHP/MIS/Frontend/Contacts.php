@@ -69,7 +69,7 @@
 		<h3 style="font-weight:100;margin-top:15px;">MUSIQUE Music</h3>
 					<ul  style="column-count:2; padding-left: 5px;  padding-top: 10px;">
 							<li style="list-style-type: none;"><a  style=" text-decoration:none;"class="btn btn-warning" href="Profile.php">Company Profile</a></li>
-							<li style="list-style-type: none;"><a  style=" text-decoration:none;"class="btn btn-warning" href="AboutUs.php">About Us</a></li>
+							<li style="list-style-type: none;"><a  style=" text-decoration:none;    margin-left: 52px;"class="btn btn-warning" href="AboutUs.php">About Us</a></li>
 					</ul>
 	</div>
 <!--Section: Contact v.2-->

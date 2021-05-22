@@ -15,6 +15,7 @@ $albumimage = $rowImage['albumimage'];
 <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
 
 <title>MUSIQUE Music</title>
+
 <!-- BOOTSTRAP -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -205,6 +206,10 @@ jQuery(document).ready(function() {
 
 </script>
 <style type="text/css">
+body{
+	background: url("https://cdn.statically.io/img/lh3.googleusercontent.com/proxy/oprVvm3HAD3AmnAC15gMIa7jluIqgItLjhoRCY350mR268l5qJDvj8jYVyFlSv7v8blajYXJhqWcoepG3orFBKVqGw=s0-d");
+	repeat:no-repeat;
+}
 div.jp-audio,
 div.jp-video {
   /* Edit the font-size to counteract inherited font sizing.
@@ -237,7 +242,7 @@ ul.jp-controls li a.disabled {
 </style>
 </head>
 
-<body>
+<body >
 	<nav style="background-color: #232931;"class="navbar navbar-expand-lg navbar-light menu">
 	  <a class="navbar-brand " style="color:#f4f3f3;" href="#" >MUSIQUE</a>
 	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -278,7 +283,7 @@ ul.jp-controls li a.disabled {
 </nav>
 <!--Start Container for the web content-->
 <div class="container">
-	<div class="playlist_wrapper">
+	<div style="margin-left: 83px;" class="playlist_wrapper">
 
         	<div style="margin-left:1%;margin-top:70px;"class="playlist_info">
             	<table style="padding:15px 15px;" cellspacing="0">
@@ -294,12 +299,12 @@ ul.jp-controls li a.disabled {
 				while($row = mysqli_fetch_array($sql)){
 				?>
                 	<tr>
-                    	<td><?php echo "<img style='border-radius:15px;padding:15px 15px 15px 15px;' src=../Administrator/PHP/upload_images/album/$row[albumimage] height=350 width=300/>";?></td>
+                    	<td><?php echo "<img style='padding:15px 15px 15px 15px;' src=../Administrator/PHP/upload_images/album/$row[albumimage] height=350 width=300/>";?></td>
                         <td>
                         	<table>
                             	<tr>
                                 	<td id=album>Album</td>
-                                	<td><?php echo $row['albumname']?></td>
+                                	<td><h1><?php echo $row['albumname']?></h1></td>
                                 </tr>
                                 <tr>
                                 	<td id="a1">Singer</td>

@@ -252,13 +252,13 @@ $(document).ready(function(){
 	        	  <h3 style="color:#09F;font-family:Montserrat; font-size:20px">Feedback Form</h3>
 	        	<div style="font-family:Montserrat;" class="FeedBackForm" id="FeedBackForm">
 	                <label for="fname" id="f">Name</label><br />
-	                <input type="text" name="fname" id="fname" size="60" placeholder="Complete Name"/><br />
+	                <input type="text" name="fname" id="fname" size="60" placeholder="Complete Name" required/><br />
 	                <label for="femail" id="f">Email Address</label><br />
-	                <input type="text" name="femail" id="femail" size="60" placeholder="Email Address"/><br />
+	                <input type="text" name="femail" id="femail" size="60" placeholder="Email Address" required/><br />
 	                <label for="faddress" id="f">Address</label><br />
-	                <input type="text" name="faddress" id="faddress" size="60" placeholder="Address"/><br />
+	                <input type="text" name="faddress" id="faddress" size="60" placeholder="Address" required/><br />
 	                <label for="fmessage" id="f">Message</label><br />
-	                <textarea name="fmessage" cols="37" rows="8" placeholder="Your Message" id="fmessage"></textarea>
+	                <textarea name="fmessage" cols="37" rows="8" placeholder="Your Message" id="fmessage" required></textarea>
 	            </div>
 	            <div>
 	            	<input style="font-family:Montserrat;width:100px;" class="btn btn-outline-dark" type="submit" value="Submit" id="sub"/>&nbsp;
